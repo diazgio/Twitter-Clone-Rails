@@ -23,8 +23,8 @@ default: &default
 
 development:
   <<: *default
-  database: Twitter_Clone_development
-
+  database: Twitter_Clone
+  username: giordano
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: Twitter_Clone_production
-  username: Twitter_Clone
+  username: giordano
   password: <%= ENV['TWITTER_CLONE_DATABASE_PASSWORD'] %>
